@@ -1,3 +1,21 @@
+#Basic Fuzzbuzz solution: (this code not working in R studio)
+
+
+i <- 1:100
+for (num in i) {
+  if (num %% 3 == 0 && num %% 5 == 0) {
+    print("FizzBuzz")
+  } else if (num %% 3 == 0) {
+    print("Fizz")
+  } else if (num %% 5 == 0) {
+    print("Buzz")
+  } else {
+    print(num)
+  }
+}
+
+----  ----------------------------------------------------------------------
+
 for (num in 1:100) {  # Directly using 1:100 instead of i
   if (num %% 3 == 0 && num %% 5 == 0) {
     print("FizzBuzz")
